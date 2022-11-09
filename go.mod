@@ -1,4 +1,4 @@
-module github.com/dshearer/jobber
+module github.com/FuTuL/jobber
 
 go 1.14
 

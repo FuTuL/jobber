@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/dshearer/jobber/common"
+	"github.com/FuTuL/jobber/common"
 )
 
 type JobStatus uint8

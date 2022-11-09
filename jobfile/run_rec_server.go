@@ -5,7 +5,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/dshearer/jobber/common"
+	"github.com/FuTuL/jobber/common"
 )
 
 /*

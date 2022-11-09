@@ -11,8 +11,8 @@ import (
 	"sync"
 	"syscall"
 
+	"github.com/FuTuL/jobber/common"
 	arg "github.com/alexflint/go-arg"
-	"github.com/dshearer/jobber/common"
 )
 
 /*

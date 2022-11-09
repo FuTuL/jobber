@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/dshearer/jobber/common"
+	"github.com/FuTuL/jobber/common"
 )
 
 const (
@@ -218,14 +218,14 @@ func (self RandomTimeSpec) Satisfied(val int) bool {
 }
 
 /*
-	Pick a random value, and remember it so that it can be used by
-	the method Satisfied.
+Pick a random value, and remember it so that it can be used by
+the method Satisfied.
 
-	The method Satisfied will panic unless this method has been
-	called.
+The method Satisfied will panic unless this method has been
+called.
 
-	If this method has already been called, calling it again has
-	no effect.
+If this method has already been called, calling it again has
+no effect.
 */
 func (self *RandomTimeSpec) Derandomize() {
 	if self.pickedVal != nil {
@@ -237,8 +237,8 @@ func (self *RandomTimeSpec) Derandomize() {
 }
 
 /*
-   Get the picked value.  If Derandomize has never been called,
-   returns nil.
+Get the picked value.  If Derandomize has never been called,
+returns nil.
 */
 func (self RandomTimeSpec) PickedValue() *int {
 	return self.pickedVal

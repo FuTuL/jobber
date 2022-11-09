@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/dshearer/jobber/ipc"
-	"github.com/dshearer/jobber/jobfile"
+	"github.com/FuTuL/jobber/ipc"
+	"github.com/FuTuL/jobber/jobfile"
 )
 
 func resultSinksString(sinks []jobfile.ResultSink) string {

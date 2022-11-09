@@ -7,8 +7,8 @@ import (
 	"net/rpc/jsonrpc"
 	"os"
 
-	"github.com/dshearer/jobber/common"
-	"github.com/dshearer/jobber/ipc"
+	"github.com/FuTuL/jobber/common"
+	"github.com/FuTuL/jobber/ipc"
 )
 
 type IpcService struct {

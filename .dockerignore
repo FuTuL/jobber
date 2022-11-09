@@ -18,3 +18,7 @@ results
 *cloudimg-console.log
 mk/config.mk
 .idea
+
+Dockerfile
+.git
+.gitignore

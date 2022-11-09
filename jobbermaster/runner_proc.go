@@ -10,7 +10,7 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/dshearer/jobber/common"
+	"github.com/FuTuL/jobber/common"
 )
 
 type RunnerProc struct {

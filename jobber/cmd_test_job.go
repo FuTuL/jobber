@@ -8,7 +8,7 @@ import (
 	"os"
 	"os/user"
 
-	"github.com/dshearer/jobber/ipc"
+	"github.com/FuTuL/jobber/ipc"
 )
 
 func doTestCmd(args []string) int {

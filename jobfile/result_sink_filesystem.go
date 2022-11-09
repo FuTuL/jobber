@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/dshearer/jobber/common"
+	"github.com/FuTuL/jobber/common"
 )
 
 const _FILESYSTEM_RESULT_SINK_NAME = "filesystem"
@@ -23,13 +23,13 @@ Example: Consider FilesystemResultSink{Path: "/some/dir", DataRaw: ["stdout", "s
 For a job named "JobOne", this will result in a set of files like this:
 
   - /some/dir/
-    - JobOne/
-      - 1521318351.stdout
-      - 1521318351.stderr
-      - 1521318411.stdout
-      - 1521318411.stderr
-      - 1521318471.stdout
-      - 1521318471.stderr
+  - JobOne/
+  - 1521318351.stdout
+  - 1521318351.stderr
+  - 1521318411.stdout
+  - 1521318411.stderr
+  - 1521318471.stdout
+  - 1521318471.stderr
 */
 type FilesystemResultSink struct {
 	Path       string              `yaml:"path"`

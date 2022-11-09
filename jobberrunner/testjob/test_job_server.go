@@ -12,8 +12,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/dshearer/jobber/common"
-	"github.com/dshearer/jobber/jobfile"
+	"github.com/FuTuL/jobber/common"
+	"github.com/FuTuL/jobber/jobfile"
 )
 
 type TestJobServer struct {

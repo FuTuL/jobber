@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/dshearer/jobber/common"
+	"github.com/FuTuL/jobber/common"
 	"gopkg.in/yaml.v2"
 )
 

@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 
-	"github.com/dshearer/jobber/common"
-	"github.com/dshearer/jobber/ipc"
-	"github.com/dshearer/jobber/jobfile"
+	"github.com/FuTuL/jobber/common"
+	"github.com/FuTuL/jobber/ipc"
+	"github.com/FuTuL/jobber/jobfile"
 )
 
 func (self *JobManager) doResumeCmd(cmd ipc.ResumeCmd) ipc.ICmdResp {

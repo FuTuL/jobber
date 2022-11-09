@@ -20,12 +20,12 @@ SRC_TARBALL_DIR = jobber-${JOBBER_VERSION}
 OUTPUT_DIR = bin
 
 GO = go
-GO_VERSION = 1.11
+GO_VERSION = 1.19
 # NOTE: '-mod=vendor' prevents go from downloading dependencies
 GO_BUILD_BASE_FLAGS := -mod=vendor
 COMPILETIME_VARS := \
-	-X 'github.com/dshearer/jobber/common.jobberVersion=${JOBBER_VERSION}' \
-	-X 'github.com/dshearer/jobber/common.etcDirPath=${sysconfdir}'
+	-X 'github.com/FuTuL/jobber/common.jobberVersion=${JOBBER_VERSION}' \
+	-X 'github.com/FuTuL/jobber/common.etcDirPath=${sysconfdir}'
 
 GO_BUILD := ${GO} build ${GO_BUILD_BASE_FLAGS} -ldflags "${COMPILETIME_VARS}"
 GO_VET = ${GO} vet -mod=vendor
@@ -34,12 +34,12 @@ GO_GEN = ${GO_WITH_TOOLS} generate -mod=vendor
 GO_CLEAN = ${GO} clean -mod=vendor
 
 PACKAGES = \
-	github.com/dshearer/jobber/common \
-	github.com/dshearer/jobber/ipc \
-	github.com/dshearer/jobber/jobber \
-	github.com/dshearer/jobber/jobbermaster \
-	github.com/dshearer/jobber/jobberrunner \
-	github.com/dshearer/jobber/jobfile
+	github.com/FuTuL/jobber/common \
+	github.com/FuTuL/jobber/ipc \
+	github.com/FuTuL/jobber/jobber \
+	github.com/FuTuL/jobber/jobbermaster \
+	github.com/FuTuL/jobber/jobberrunner \
+	github.com/FuTuL/jobber/jobfile
 
 include mk/def-sources.mk
 
@@ -72,7 +72,7 @@ ${OUTPUT_DIR}/% : ${MAIN_SOURCES} jobfile/parse_time_spec.go
 	@echo GO VET
 	@${GO_VET} ${PACKAGES}
 	@echo BUILD $*
-	@${GO_BUILD} -o "$@" "github.com/dshearer/jobber/$*"
+	@${GO_BUILD} -o "$@" "github.com/FuTuL/jobber/$*"
 
 ${OUTPUT_DIR}/jobber.conf : ${OUTPUT_DIR}/jobbermaster
 	@echo BUILD $@
@@ -80,7 +80,7 @@ ${OUTPUT_DIR}/jobber.conf : ${OUTPUT_DIR}/jobbermaster
 
 jobfile/parse_time_spec.go : ${GOYACC} ${JOBFILE_SOURCES}
 	@echo GEN SRC
-	@${GO_GEN} -mod=vendor github.com/dshearer/jobber/jobfile
+	@${GO_GEN} -mod=vendor github.com/FuTuL/jobber/jobfile
 
 ################################################################################
 # INSTALL

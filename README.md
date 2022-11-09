@@ -1,8 +1,6 @@
-# Jobber [![Build Status](https://travis-ci.org/dshearer/jobber.svg?branch=master)](https://travis-ci.org/dshearer/jobber) [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/1476/badge)](https://bestpractices.coreinfrastructure.org/projects/1476)
+# Jobber
 
 A replacement for cron, with sophisticated status-reporting and error-handling.
-
-** NOTE ** Due to lack of time, this project is not actively maintained. Please get in touch if you're interested in taking it over.
 
 ## Intro
 
@@ -15,7 +13,7 @@ Along with the functionality of cron, Jobber also provides:
 
 ## Contributing
 
-**Contributions/suggestions/requests are welcome!**  Feel free to [open an issue](https://github.com/dshearer/jobber/issues), or ask a question on [the mailing list](https://groups.google.com/d/forum/jobber-proj).
+**Contributions/suggestions/requests are welcome!**  Feel free to [open an issue](https://github.com/FuTuL/jobber/issues), or ask a question on [the mailing list](https://groups.google.com/d/forum/jobber-proj).
 
 ## More Info
 
