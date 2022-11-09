@@ -5,8 +5,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/dshearer/jobber/common"
-	"github.com/dshearer/jobber/jobfile"
+	"github.com/FuTuL/jobber/common"
+	"github.com/FuTuL/jobber/jobfile"
 )
 
 // JobRunnerThread implements the thread that schedules and runs all the jobs.

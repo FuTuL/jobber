@@ -7,7 +7,7 @@ import (
 	"os/user"
 	"time"
 
-	"github.com/dshearer/jobber/common"
+	"github.com/FuTuL/jobber/common"
 )
 
 const gNoSocketErrMsg = `Jobber doesn't seem to be running for user %v.

@@ -5,7 +5,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/dshearer/jobber/jobfile"
+	"github.com/FuTuL/jobber/jobfile"
 )
 
 func nextRunTime(job *jobfile.Job, now time.Time) *time.Time {

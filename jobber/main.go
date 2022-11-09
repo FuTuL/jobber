@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/dshearer/jobber/common"
+	"github.com/FuTuL/jobber/common"
 )
 
 const (

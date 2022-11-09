@@ -1,0 +1,6 @@
+version: 1.4
+
+jobs:
+  ExampleJob:
+    cmd: echo "Jobber is running!"
+    time: "*"

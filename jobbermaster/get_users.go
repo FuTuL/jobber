@@ -4,7 +4,7 @@ import (
 	"os/user"
 	"path/filepath"
 
-	"github.com/dshearer/jobber/common"
+	"github.com/FuTuL/jobber/common"
 )
 
 func userHasHome(usr *user.User) bool {

@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/dshearer/jobber/jobfile"
+	"github.com/FuTuL/jobber/jobfile"
 	"github.com/stretchr/testify/require"
 )
 

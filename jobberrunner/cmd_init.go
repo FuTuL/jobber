@@ -5,8 +5,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/dshearer/jobber/common"
-	"github.com/dshearer/jobber/ipc"
+	"github.com/FuTuL/jobber/common"
+	"github.com/FuTuL/jobber/ipc"
 )
 
 const gDefaultJobfile = `## This is your jobfile: use it to tell Jobber what jobs you want it to

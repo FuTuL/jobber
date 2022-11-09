@@ -6,8 +6,8 @@ import (
 	"os/exec"
 	"time"
 
-	"github.com/dshearer/jobber/common"
-	"github.com/dshearer/jobber/jobfile"
+	"github.com/FuTuL/jobber/common"
+	"github.com/FuTuL/jobber/jobfile"
 )
 
 // testJobThread represents a thread that is spawned when the user calls the

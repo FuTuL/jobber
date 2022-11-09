@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/dshearer/jobber/common"
+	"github.com/FuTuL/jobber/common"
 )
 
 const _PROGRAM_RESULT_SINK_NAME = "program"

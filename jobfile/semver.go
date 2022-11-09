@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/dshearer/jobber/common"
+	"github.com/FuTuL/jobber/common"
 )
 
 type SemVer struct {

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/dshearer/jobber/ipc"
+	"github.com/FuTuL/jobber/ipc"
 )
 
 func (self *JobManager) doReloadCmd(cmd ipc.ReloadCmd) ipc.ICmdResp {

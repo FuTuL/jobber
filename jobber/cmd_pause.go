@@ -7,7 +7,7 @@ import (
 	"os/user"
 	"time"
 
-	"github.com/dshearer/jobber/ipc"
+	"github.com/FuTuL/jobber/ipc"
 )
 
 func doPauseCmd(args []string) int {
@@ -15,7 +15,7 @@ func doPauseCmd(args []string) int {
 	flagSet := flag.NewFlagSet(PauseCmdStr, flag.ExitOnError)
 	flagSet.Usage = subcmdUsage(PauseCmdStr, "[JOBS...]", flagSet)
 	var help_p *bool = flagSet.Bool("h", false, "help")
-	var timeout_p = flagSet.Duration("t", 5 * time.Second, "timeout")
+	var timeout_p = flagSet.Duration("t", 5*time.Second, "timeout")
 	flagSet.Parse(args)
 
 	if *help_p {

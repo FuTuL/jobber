@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 9), dh-systemd (>= 1.5), rsync
 Standards-Version: 3.9.5
 Homepage: http://dshearer.github.io/jobber/
 Vcs-Git: git://git@github.com:dshearer/jobber.git
-Vcs-Browser: https://github.com/dshearer/jobber
+Vcs-Browser: https://github.com/FuTuL/jobber
 
 Package: jobber
 Architecture: any

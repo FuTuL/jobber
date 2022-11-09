@@ -10,8 +10,8 @@ import (
 	"text/tabwriter"
 	"time"
 
-	"github.com/dshearer/jobber/common"
-	"github.com/dshearer/jobber/ipc"
+	"github.com/FuTuL/jobber/common"
+	"github.com/FuTuL/jobber/ipc"
 )
 
 type ListRespRec struct {
@@ -149,7 +149,7 @@ func doListCmd(args []string) int {
 	flagSet.Usage = subcmdUsage(ListCmdStr, "", flagSet)
 	var help_p = flagSet.Bool("h", false, "help")
 	var allUsers_p = flagSet.Bool("a", false, "all-users")
-	var timeout_p = flagSet.Duration("t", 5 * time.Second, "timeout")
+	var timeout_p = flagSet.Duration("t", 5*time.Second, "timeout")
 	flagSet.Parse(args)
 
 	if *help_p {

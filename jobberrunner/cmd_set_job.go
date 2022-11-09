@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/dshearer/jobber/common"
-	"github.com/dshearer/jobber/ipc"
+	"github.com/FuTuL/jobber/common"
+	"github.com/FuTuL/jobber/ipc"
 )
 
 func (self *JobManager) doSetJobCmd(cmd ipc.SetJobCmd) ipc.ICmdResp {
