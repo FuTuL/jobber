@@ -904,8 +904,13 @@ func encodeRunLogEntry(entry *RunLogEntry) string {
 		encodedTime,
 		entry.Fate,
 		entry.Result,
-		entry.ExecTime,
+		entry.ExecTime.Truncate(time.Microsecond),
 	)
+
+	if int(gLogEntryLen)-len(tmp) <= 0 {
+		return tmp // it's better than throw error
+	}
+
 	suffix := strings.Repeat(" ", int(gLogEntryLen)-len(tmp))
 	return fmt.Sprintf("%v%v", tmp, suffix)
 }
